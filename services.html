@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - EHMcare Clinic | Natural Healing & Traditional Medicine</title>
+    <link rel="stylesheet" href="global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="favicon icon" href="logo_ehmcare.jpg" type="image/x-icon">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- JavaScript file -->
+    <script src="function-sales-complete.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo_ehmcare.jpg" alt="EHMcare Clinic Logo">
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index-updated.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://calendly.com/adeyemiishaaqalabi/30min">Book Appointment</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1>Comprehensive Natural Healing Services</h1>
+                <h2>Experience the power of Traditional Chinese Medicine and African healing wisdom combined with modern healthcare standards</h2>
+                <p>Our certified practitioners offer a complete range of natural therapies designed to address the root cause of your health concerns. From acupuncture and herbal medicine to specialized treatments, we provide personalized care that works with your body's natural healing abilities.</p>
+                <p>Each service is delivered by internationally certified practitioners with over 15 years of combined experience in holistic healing and wellness.</p>
+                <div class="cta-buttons">
+                    <button type="button" class="btn primary-btn consultation-btn">Book Your FREE Service Consultation</button>
+                    <a href="https://wa.me/2349015184004" class="btn secondary-btn" target="_blank">Send WhatsApp Message</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview Section -->
+        <section id="benefits" class="benefits-section">
+            <div class="container">
+                <h2>Our Core Natural Healing Services</h2>
+                <div class="benefit-grid">
+                    <div class="benefit-item">
+                        <div class="service-image">
+                            <img src="Service-img/traditional.jpg" alt="Traditional Acupuncture" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="service-icon" style="display: none;">🎯</div>
+                        </div>
+                        <h3>Traditional Acupuncture</h3>
+                        <p>Ancient Chinese technique using fine needles to stimulate specific points on the body, promoting natural healing and pain relief. Effective for chronic pain, stress, fertility issues, and digestive disorders.</p>
+                        <ul class="service-features">
+                            <li>Pain management and relief</li>
+                            <li>Stress and anxiety reduction</li>
+                            <li>Fertility enhancement</li>
+                            <li>Digestive health improvement</li>
+                            <li>Sleep disorder treatment</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="service-image">
+                            <img src="Service-img/cuppiny.jpg" alt="Hijama Cupping Therapy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="service-icon" style="display: none;">🔥</div>
+                        </div>
+                        <h3>Hijama (Cupping Therapy)</h3>
+                        <p>Traditional Islamic healing practice that removes toxins from the body and improves blood circulation through controlled suction. Excellent for muscle tension and immune system support.</p>
+                        <ul class="service-features">
+                            <li>Blood purification</li>
+                            <li>Muscle tension relief</li>
+                            <li>Improved circulation</li>
+                            <li>Toxin removal</li>
+                            <li>Immune system boost</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="service-image">
+                            <img src="Service-img/herbal-medicine.jpg" alt="Traditional Herbal Medicine" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="service-icon" style="display: none;">🌿</div>
+                        </div>
+                        <h3>Traditional Herbal Medicine</h3>
+                        <p>Customized herbal formulations using both Chinese and African medicinal plants to address specific health conditions naturally. All herbs are quality-tested and NAFDAC approved.</p>
+                        <ul class="service-features">
+                            <li>Personalized herbal prescriptions</li>
+                            <li>Chronic disease management</li>
+                            <li>Hormonal balance restoration</li>
+                            <li>Digestive system healing</li>
+                            <li>Immune system strengthening</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="service-image">
+                            <img src="Service-img/tuina.png" alt="Tuina Therapeutic Massage" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="service-icon" style="display: none;">👐</div>
+                        </div>
+                        <h3>Tuina Therapeutic Massage</h3>
+                        <p>Chinese therapeutic massage technique that combines acupressure, stretching, and joint mobilization for holistic healing. Perfect for stress relief and physical rehabilitation.</p>
+                        <ul class="service-features">
+                            <li>Deep tissue healing</li>
+                            <li>Joint mobility improvement</li>
+                            <li>Stress relief and relaxation</li>
+                            <li>Energy flow restoration</li>
+                            <li>Muscle pain relief</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="service-image">
+                            <img src="Service-img/moxibusion.jpg" alt="Moxibustion Therapy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="service-icon" style="display: none;">🔥</div>
+                        </div>
+                        <h3>Moxibustion Therapy</h3>
+                        <p>Traditional Chinese technique using burning mugwort to warm acupuncture points and stimulate healing energy flow. Excellent for digestive issues and chronic fatigue.</p>
+                        <ul class="service-features">
+                            <li>Yang energy enhancement</li>
+                            <li>Digestive system strengthening</li>
+                            <li>Chronic fatigue treatment</li>
+                            <li>Cold constitution warming</li>
+                            <li>Immune system boosting</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="service-image">
+                            <img src="Service-img/scapler1.png" alt="Zhu's Scalp Acupuncture" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="service-icon" style="display: none;">🧠</div>
+                        </div>
+                        <h3>Zhu's Scalp Acupuncture</h3>
+                        <p>Specialized technique focusing on scalp points to treat neurological conditions and enhance brain function. Particularly effective for stroke recovery and cognitive enhancement.</p>
+                        <ul class="service-features">
+                            <li>Stroke recovery support</li>
+                            <li>Neurological disorder treatment</li>
+                            <li>Memory enhancement</li>
+                            <li>Migraine relief</li>
+                            <li>Mental clarity improvement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Programs Section -->
+        <section id="conditions" class="conditions-section">
+            <div class="container">
+                <h2>Specialized Treatment Programs</h2>
+                <div class="condition-grid">
+                    <div class="condition-item">
+                        <h3>Fertility Enhancement Program</h3>
+                        <p>Comprehensive natural fertility treatment combining multiple therapies for optimal results.</p>
+                        <ul>
+                            <li>Initial comprehensive fertility assessment</li>
+                            <li>Weekly acupuncture sessions</li>
+                            <li>Customized herbal medicine</li>
+                            <li>Lifestyle and dietary guidance</li>
+                            <li>Stress management techniques</li>
+                            <li>Partner support and education</li>
+                            <li>Regular progress monitoring</li>
+                        </ul>
+                        <div class="program-results">
+                            <strong>Success Rate: 78% of couples achieve pregnancy within 6 months</strong>
+                        </div>
+                    </div>
+                    <div class="condition-item">
+                        <h3>Chronic Pain Management</h3>
+                        <p>Holistic approach to managing chronic pain conditions without dependency on medications.</p>
+                        <ul>
+                            <li>Detailed pain assessment and diagnosis</li>
+                            <li>Bi-weekly acupuncture treatments</li>
+                            <li>Hijama therapy sessions</li>
+                            <li>Therapeutic massage</li>
+                            <li>Anti-inflammatory herbal medicine</li>
+                            <li>Exercise and movement therapy</li>
+                            <li>Pain management education</li>
+                        </ul>
+                        <div class="program-results">
+                            <strong>Average 70% pain reduction within 8 weeks</strong>
+                        </div>
+                    </div>
+                    <div class="condition-item">
+                        <h3>Stress & Mental Wellness</h3>
+                        <p>Comprehensive program to address stress, anxiety, and mental health through natural therapies.</p>
+                        <ul>
+                            <li>Mental health assessment</li>
+                            <li>Weekly acupuncture for stress relief</li>
+                            <li>Calming herbal formulations</li>
+                            <li>Relaxation massage therapy</li>
+                            <li>Meditation and breathing techniques</li>
+                            <li>Sleep improvement strategies</li>
+                            <li>Lifestyle modification guidance</li>
+                        </ul>
+                        <div class="program-results">
+                            <strong>85% improvement in stress levels and sleep quality</strong>
+                        </div>
+                    </div>
+                    <div class="condition-item">
+                        <h3>Digestive Health Restoration</h3>
+                        <p>Natural approach to healing digestive disorders and improving gut health.</p>
+                        <ul>
+                            <li>Comprehensive digestive assessment</li>
+                            <li>Targeted acupuncture treatments</li>
+                            <li>Digestive herbal formulations</li>
+                            <li>Dietary therapy and nutrition counseling</li>
+                            <li>Stress reduction techniques</li>
+                            <li>Gut microbiome support</li>
+                            <li>Long-term maintenance plan</li>
+                        </ul>
+                        <div class="program-results">
+                            <strong>90% improvement in digestive symptoms within 6 weeks</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatment Process Section -->
+        <section id="whatsapp-reviews" class="whatsapp-reviews-section">
+            <div class="container">
+                <h2>Our 5-Step Treatment Process</h2>
+                <p class="section-subtitle">A systematic approach to your healing journey</p>
+                
+                <div>
+                    <div class="process-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Initial Consultation & Assessment</h3>
+                                <p>Comprehensive health assessment including medical history, current symptoms, and lifestyle factors. Traditional Chinese Medicine diagnosis techniques are used alongside modern assessment methods.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Personalized Treatment Plan</h3>
+                                <p>Based on your assessment, we create a customized treatment plan combining the most effective therapies for your specific condition. Clear timelines and expected outcomes are discussed.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Treatment Implementation</h3>
+                                <p>Regular treatment sessions are scheduled according to your plan. Each session is carefully monitored and adjusted based on your progress and response to treatment.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Progress Monitoring</h3>
+                                <p>Regular assessments track your improvement and allow for treatment adjustments. We maintain detailed records of your progress and communicate regularly about your healing journey.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>Maintenance & Prevention</h3>
+                                <p>Once your primary concerns are addressed, we provide guidance on maintaining your health and preventing future issues through lifestyle modifications and periodic treatments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-indicators">
+                    <h3>Why Choose Our Services:</h3>
+                    <div class="trust-grid">
+                        <div class="trust-item">
+                            <span class="trust-icon">✅</span>
+                            <span>Internationally certified practitioners</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">🏆</span>
+                            <span>Over 3,000 successful treatments</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">🎓</span>
+                            <span>Evidence-based natural therapies</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">🏥</span>
+                            <span>Modern clinic facilities</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">👥</span>
+                            <span>Personalized treatment approach</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">💬</span>
+                            <span>Ongoing support and guidance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Testimonial Section -->
+        <section id="video-testimonial" class="video-section">
+            <div class="container">
+                <h2>See Our Services in Action</h2>
+                <p class="section-subtitle">Watch how our natural healing services transform lives</p>
+                
+                <div class="video-container">
+                    <div class="main-video-wrapper">
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/xaS6cEPk3U4?si=k6_o0vs_Ia9nkybC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"></iframe>
+                    </div>
+                    
+                    <div class="video-grid">
+                        <div class="video-item">
+                            <iframe width="100%" height="180" src="https://www.youtube.com/embed/r8qUzdGwHQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 10px;"></iframe>
+                            <div class="video-info">
+                                <h4>Acupuncture Treatment</h4>
+                                <p>Traditional Healing Method</p>
+                                <span>0:60</span>
+                            </div>
+                        </div>
+            
+                        <div class="video-item">
+                            <iframe width="100%" height="180" src="https://www.youtube.com/embed/HdZcjTvTtVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 10px;"></iframe>
+                            <div class="video-info">
+                                <h4>Hijama Therapy Session</h4>
+                                <p>Cupping Treatment</p>
+                                <span>0:60</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-cta">
+                    <p>Ready to experience our natural healing services?</p>
+                    <button type="button" class="btn primary-btn consultation-btn">Book Your Service Consultation</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead Magnet Section -->
+        <section id="lead-magnet" class="lead-magnet-section">
+            <div class="container">
+                <h2>Download Our Free Service Guide</h2>
+                <h3>Learn which natural healing service is best for your specific health condition.</h3>
+                <button type="button" class="btn primary-btn lead-magnet-btn">GET FREE SERVICE GUIDE</button>
+                <p class="urgency">Only 4 FREE service consultations available this month. <strong>Book now!</strong></p>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="consultation" class="consultation-section">
+            <div class="container">
+                <h2>Ready to Start Your Natural Healing Journey?</h2>
+                <p>Book your FREE service consultation today and discover which of our natural healing services is perfect for your health goals.</p>
+                <div class="cta-buttons">
+                    <button type="button" class="btn primary-btn consultation-btn">BOOK FREE SERVICE CONSULTATION</button>
+                    <a href="https://wa.me/2349015184004" class="btn secondary-btn" target="_blank">SEND WHATSAPP MESSAGE</a>
+                </div>
+                <p class="risk-reversal"><strong>Our Service Promise:</strong> If you don't experience noticeable improvement within your first 3 sessions of any service, we'll work with you at no additional cost until you do. Your healing is our commitment.</p>
+            </div>
+        </section>
+    </main>
+
+<footer>
+    <div class="container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Ilorin Clinic:</strong> No.4, Sofoluwe Street, Lajorin Road, Off G.R.A, Ilorin, Kwara State, Nigeria</p>
+            <p><strong>Phone:</strong> +234 905 975 8574</p>
+            <p><strong>WhatsApp:</strong> +234 901 518 4004</p>
+            <p><strong>Email:</strong> info@ehmcare.com.ng</p>
+            <p><strong>Emergency/After Hours:</strong> Available for urgent cases</p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+            <!-- Add this new section for social media -->
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+    <a href="https://www.facebook.com/EHMCare" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/ehmcare" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@EHMCare" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="http://tiktok.com/@ehmcare" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+</div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 EHMcare Clinic. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <a href="https://wa.me/2349015184004" class="whatsapp-float" target="_blank">
+        <i>💬</i>
+    </a>
+</body>
+</html>

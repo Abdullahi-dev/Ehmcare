@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EHMcare Clinic | Get in Touch for Natural Healing</title>
+    <link rel="stylesheet" href="global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="favicon icon" href="logo_ehmcare.jpg" type="image/x-icon">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- JavaScript file -->
+     <script src="contact-hero.js" defer></script>
+    <script src="" defer></script>
+     <script src="contact.js" defer></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo_ehmcare.jpg" alt="EHMcare Clinic Logo">
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index-updated.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="https://calendly.com/adeyemiishaaqalabi/30min">Book Appointment</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1>Get in Touch with Our Natural Healing Experts</h1>
+                <h2>Ready to start your journey to better health? We're here to answer your questions and guide you toward the natural healing solutions that work best for you</h2>
+                <p>Whether you have questions about our services, want to schedule a consultation, or need guidance on which treatment is right for your condition, our team is ready to help. We believe in providing personalized attention from your very first contact with us.</p>
+                <p>Reach out to us through any of the convenient methods below, and we'll respond promptly to help you take the next step toward natural healing and wellness.</p>
+                <div class="cta-buttons">
+                    <button type="button" class="btn primary-btn consultation-btn">Book Your FREE Consultation</button>
+                    <a href="https://wa.me/2349015184004" class="btn secondary-btn" target="_blank">Send WhatsApp Message</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Methods Section -->
+        <section id="benefits" class="benefits-section">
+            <div class="container">
+                <h2>Multiple Ways to Reach Us</h2>
+                <div class="benefit-grid">
+                    <div class="benefit-item">
+                        <h3>📞 Phone Consultation</h3>
+                        <p><strong>Main Line:</strong> +234 905 975 8574</p>
+                        <p>Call us during business hours for immediate assistance. Our trained staff can answer questions about services, pricing, and availability. Perfect for urgent inquiries or when you prefer speaking directly with our team.</p>
+                        <p><strong>Hours:</strong> Monday - Saturday, 8:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>💬 WhatsApp Direct Line</h3>
+                        <p><strong>WhatsApp:</strong> +234 901 518 4004</p>
+                        <p>Get instant responses through WhatsApp! Send us your questions, photos of health concerns, or schedule appointments. Dr. Alabi personally responds to WhatsApp messages for personalized guidance and support.</p>
+                        <p><strong>Response Time:</strong> Usually within 2-4 hours during business hours</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>✉️ Email Support</h3>
+                        <p><strong>Email:</strong> info@ehmcare.com.ng</p>
+                        <p>Send detailed inquiries, medical history, or documentation via email. Perfect for comprehensive questions about treatment plans, insurance coverage, or when you need to share multiple documents with our team.</p>
+                        <p><strong>Response Time:</strong> Within 24 hours on business days</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>🏥 Visit Our Clinic</h3>
+                        <p><strong>Address:</strong> No.4, Sofoluwe Street, Lajorin Road, Off G.R.A, Ilorin, Kwara State, Nigeria</p>
+                        <p>Visit us in person for consultations, treatments, or to pick up herbal medicines. Our modern clinic provides a comfortable environment for all your natural healing needs.</p>
+                        <p><strong>Walk-ins Welcome:</strong> Monday - Saturday, 9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>🚨 Emergency Support</h3>
+                        <p><strong>After Hours:</strong> Available for urgent cases</p>
+                        <p>For urgent health concerns outside business hours, contact us via WhatsApp or phone. We provide emergency guidance and can arrange urgent consultations when medically necessary.</p>
+                        <p><strong>Emergency Response:</strong> Within 1 hour for urgent cases</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>🏠 Home Therapy Services</h3>
+                        <p><strong>Service Areas:</strong> Ilorin, Lagos, Abuja</p>
+                        <p>Can't visit our clinic? We offer home therapy services for acupuncture, hijama, and herbal consultations. Perfect for elderly patients, those with mobility issues, or busy professionals.</p>
+                        <p><strong>Booking:</strong> 48-hour advance notice required</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Contact Forms Section - Updated for Formspree -->
+        <section id="conditions" class="conditions-section">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <div class="condition-grid">
+                    <!-- General Inquiry Form - Updated for Formspree -->
+                    <div class="condition-item">
+                        <h3>General Inquiry Form</h3>
+                        <p>Have questions about our services, pricing, or availability? Use this form for general inquiries.</p>
+                        <form class="contact-form" id="general-inquiry-form" action="https://formspree.io/f/xeozgqbp" method="POST">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                            <select name="inquiry_type" required>
+                                <option value="">Select Inquiry Type</option>
+                                <option value="services">Services Information</option>
+                                <option value="pricing">Pricing & Packages</option>
+                                <option value="availability">Appointment Availability</option>
+                                <option value="insurance">Insurance & Payment</option>
+                                <option value="other">Other Questions</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message or Questions" rows="4" required></textarea>
+                            <input type="hidden" name="_subject" value="New General Inquiry from EHMcare Website">
+                            <input type="hidden" name="_replyto" value="">
+                            <button type="submit" class="btn primary-btn">Send Inquiry</button>
+                        </form>
+                    </div>
+
+                    <!-- Health Consultation Request - Updated for Formspree -->
+                    <div class="condition-item">
+                        <h3>Health Consultation Request</h3>
+                        <p>Ready to discuss your specific health concerns? Request a consultation with our practitioners.</p>
+                        <form class="contact-form" id="consultation-request-form" action="https://formspree.io/f/mblkojnj" method="POST">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                            <select name="health_concern" required>
+                                <option value="">Primary Health Concern</option>
+                                <option value="pain">Chronic Pain Management</option>
+                                <option value="fertility">Fertility & Reproductive Health</option>
+                                <option value="stress">Stress & Mental Wellness</option>
+                                <option value="digestive">Digestive Health Issues</option>
+                                <option value="other">Other Health Concerns</option>
+                            </select>
+                            <select name="preferred_contact" required>
+                                <option value="">Preferred Contact Method</option>
+                                <option value="phone">Phone Call</option>
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="email">Email</option>
+                                <option value="in-person">In-Person Visit</option>
+                            </select>
+                            <textarea name="health_details" placeholder="Brief description of your health concern and any current treatments" rows="4" required></textarea>
+                            <input type="hidden" name="_subject" value="New Consultation Request from EHMcare Website">
+                            <input type="hidden" name="_replyto" value="">
+                            <button type="submit" class="btn primary-btn">Request Consultation</button>
+                        </form>
+                    </div>
+                    <div class="condition-item">
+                        <h3>Appointment Booking</h3>
+                        <p>Ready to schedule your appointment? Use this form to request your preferred date and time.</p>
+                        <form class="contact-form" id="appointment-booking-form">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                            <select name="service_type" required>
+                                <option value="">Select Service</option>
+                                <option value="acupuncture">Traditional Acupuncture</option>
+                                <option value="hijama">Hijama (Cupping Therapy)</option>
+                                <option value="herbal">Herbal Medicine Consultation</option>
+                                <option value="tuina">Tuina Therapeutic Massage</option>
+                                <option value="moxibustion">Moxibustion Therapy</option>
+                                <option value="scalp">Zhu's Scalp Acupuncture</option>
+                                <option value="consultation">Initial Consultation</option>
+                            </select>
+                            <input type="date" name="preferred_date" required>
+                            <select name="preferred_time" required>
+                                <option value="">Preferred Time</option>
+                                <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                                <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
+                                <option value="evening">Evening (3:00 PM - 6:00 PM)</option>
+                            </select>
+                            <textarea name="special_requests" placeholder="Any special requests or additional information" rows="3"></textarea>
+                            <button type="submit" class="btn primary-btn">Book Appointment</button>
+                        </form>
+                    </div>
+                    <div class="condition-item">
+                        <h3>Feedback & Reviews</h3>
+                        <p>Share your experience with EHMcare or provide feedback to help us improve our services.</p>
+                        <form class="contact-form" id="feedback-form">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <select name="feedback_type" required>
+                                <option value="">Feedback Type</option>
+                                <option value="testimonial">Patient Testimonial</option>
+                                <option value="suggestion">Service Improvement Suggestion</option>
+                                <option value="complaint">Complaint or Concern</option>
+                                <option value="compliment">Compliment for Staff</option>
+                                <option value="general">General Feedback</option>
+                            </select>
+                            <select name="rating" required>
+                                <option value="">Rate Your Experience</option>
+                                <option value="5">Excellent (5 stars)</option>
+                                <option value="4">Very Good (4 stars)</option>
+                                <option value="3">Good (3 stars)</option>
+                                <option value="2">Fair (2 stars)</option>
+                                <option value="1">Poor (1 star)</option>
+                            </select>
+                            <textarea name="feedback_message" placeholder="Share your detailed feedback or experience" rows="5" required></textarea>
+                            <button type="submit" class="btn primary-btn">Submit Feedback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Location & Hours Section -->
+<section id="whatsapp-reviews" class="whatsapp-reviews-section">
+  <div class="container">
+    <h2>Visit Our Clinic</h2>
+    <p class="section-subtitle">Modern facilities designed for your comfort and healing</p>
+
+    <div class="clinic-location-map">
+      <!-- Replace the src below with your actual embed link -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.0979146613527!2d4.563529374061531!3d8.489860297197213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364d50925b8b6f%3A0x4760a89f1644c479!2z8J2QhPCdkIfwnZCM8J2QgvCdkJrwnZCr8J2QniBDbGluaWM!5e0!3m2!1sen!2sng!4v1753256482404!5m2!1sen!2sng" 
+        width="100%" 
+        height="450" 
+        style="border:0; border-radius: 12px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="clinic-info">
+      <div class="location-details">
+        <h4>🕒 Operating Hours</h4>
+        <ul>
+          <li><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</li>
+          <li><strong>Saturday:</strong> 9:00 AM - 5:00 PM</li>
+          <li><strong>Sunday & Public Holidays:</strong> Emergency cases only</li>
+        </ul>
+
+        <h4>♿ Accessibility</h4>
+        <ul>
+          <li>Wheelchair accessible entrance and facilities</li>
+          <li>Ground floor treatment rooms available</li>
+          <li>Accessible parking spaces</li>
+          <li>Support for patients with mobility challenges</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <div class="trust-indicators">
+                    <h3>What to Expect During Your Visit:</h3>
+                    <div class="trust-grid">
+                        <div class="trust-item">
+                            <span class="trust-icon">✅</span>
+                            <span>Clean, modern, and comfortable facilities</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">🏆</span>
+                            <span>Professional and friendly staff</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">🎓</span>
+                            <span>Internationally certified practitioners</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">🏥</span>
+                            <span>Strict hygiene and safety protocols</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">👥</span>
+                            <span>Personalized attention and care</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">💬</span>
+                            <span>Comprehensive consultation and treatment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="video-testimonial" class="video-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions about contacting us and visiting our clinic</p>
+                
+                <div class="video-container">
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>How quickly will you respond to my inquiry?</h4>
+                            <p>We respond to WhatsApp messages within 2-4 hours during business hours, emails within 24 hours, and phone calls are answered immediately during operating hours.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do I need an appointment to visit the clinic?</h4>
+                            <p>While walk-ins are welcome, we recommend booking an appointment to ensure availability and reduce waiting time. Emergency cases are always accommodated.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What should I bring to my first visit?</h4>
+                            <p>Bring any medical records, current medications list, insurance information, and a list of your health concerns and symptoms.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you offer consultations in languages other than English?</h4>
+                            <p>Yes, our practitioners speak English, Yoruba, and Hausa. We can also arrange interpreters for other languages with advance notice.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Can I get treatment advice over the phone?</h4>
+                            <p>We can provide general information over the phone, but specific treatment recommendations require an in-person or video consultation for safety and accuracy.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>How do I cancel or reschedule an appointment?</h4>
+                            <p>Contact us at least 24 hours in advance via WhatsApp, phone, or email to cancel or reschedule. This helps us accommodate other patients.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-cta">
+                    <p>Still have questions? We're here to help!</p>
+                    <a href="tel:+2349015184004" class="btn primary-btn about-approach-btn">Contact Us Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact Section -->
+        <section id="consultation" class="consultation-section">
+            <div class="container">
+                <h2>Need Immediate Assistance?</h2>
+                <h3>For urgent health concerns or emergency consultations, contact us immediately through WhatsApp or phone.</h3>
+                <a href="tel:+2349015184004" class="btn primary-btn about-approach-btn">EMERGENCY CONTACT</a>
+                <p class="urgency">Emergency support available 24/7. <strong>We're here when you need us!</strong></p>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="consultation" class="consultation-section">
+            <div class="container">
+                <h2>Ready to Start Your Natural Healing Journey?</h2>
+                <p>Don't wait to take control of your health. Contact us today and discover how natural healing can transform your life.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+2349059758574" class="btn primary-btn about-approach-btn">CONTACT US TODAY</a>
+                    <a href="https://wa.me/2349015184004" class="btn secondary-btn" target="_blank">SEND WHATSAPP MESSAGE</a>
+                </div>
+                <p class="risk-reversal"><strong>Our Contact Promise:</strong> We guarantee a response to all inquiries within 24 hours during business days. Your questions and concerns are important to us, and we're committed to providing prompt, helpful responses.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Ilorin Clinic:</strong> No.4, Sofoluwe Street, Lajorin Road, Off G.R.A, Ilorin, Kwara State, Nigeria</p>
+            <p><strong>Phone:</strong> +234 905 975 8574</p>
+            <p><strong>WhatsApp:</strong> +234 901 518 4004</p>
+            <p><strong>Email:</strong> info@ehmcare.com.ng</p>
+            <p><strong>Emergency/After Hours:</strong> Available for urgent cases</p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+            <!-- Add this new section for social media -->
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+    <a href="https://www.facebook.com/EHMCare" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/ehmcare" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@EHMCare" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="http://tiktok.com/@ehmcare" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+</div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 EHMcare Clinic. All rights reserved.</p>
+    </div>
+</footer>
+
+    <a href="https://wa.me/2349015184004" class="whatsapp-float" target="_blank">
+        <i>💬</i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,2205 @@
+/* ========================================
+   GLOBAL CSS FOR EHMCARE WEBSITE - REFINED
+   ======================================== */
+
+/* ========================================
+   1. CSS RESET & BASE STYLES
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+/* ========================================
+   2. CSS CUSTOM PROPERTIES (VARIABLES)
+   ======================================== */
+
+:root {
+    /* Colors - Enhanced Brand Palette */
+    --primary-green: #2E8B57;
+    --secondary-green: #228B22;
+    --light-green: #90EE90;
+    --accent-green: #3CB371;
+    --dark-green: #1F5F3F;
+    --background-gray: #f8f9fa;
+    --light-gray: #e9ecef;
+    --medium-gray: #dee2e6;
+    --text-color: #2c3e50;
+    --text-light: #5a6c7d;
+    --text-lighter: #8e9aaf;
+    --text-muted: #6c757d;
+    --white: #fff;
+    --off-white: #fefefe;
+    --dark-footer: #1a1a1a;
+    --whatsapp-green: #25d366;
+    --whatsapp-dark: #128c7e;
+    --whatsapp-header: #075e54;
+    --whatsapp-bg: #e5ddd5;
+    --whatsapp-sent: #dcf8c6;
+    --error-red: #e74c3c;
+    --success-green: #27ae60;
+    --warning-orange: #f39c12;
+    
+    /* Typography */
+    --font-family: 'Montserrat', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    
+    /* Font Sizes - Improved Scale */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.875rem;  /* 30px */
+    --font-size-4xl: 2.25rem;   /* 36px */
+    --font-size-5xl: 3rem;      /* 48px */
+    --font-size-6xl: 3.75rem;   /* 60px */
+    
+    /* Spacing - Enhanced Scale */
+    --spacing-xs: 0.25rem;   /* 4px */
+    --spacing-sm: 0.5rem;    /* 8px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 1.5rem;    /* 24px */
+    --spacing-xl: 2rem;      /* 32px */
+    --spacing-2xl: 3rem;     /* 48px */
+    --spacing-3xl: 4rem;     /* 64px */
+    --spacing-4xl: 5rem;     /* 80px */
+    --spacing-5xl: 6rem;     /* 96px */
+    
+    /* Border Radius - Modern Scale */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 20px;
+    --radius-3xl: 24px;
+    --radius-full: 50%;
+    
+    /* Box Shadows - Enhanced */
+    --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 25px rgba(0,0,0,0.12);
+    --shadow-xl: 0 12px 35px rgba(0,0,0,0.15);
+    --shadow-2xl: 0 20px 50px rgba(0,0,0,0.2);
+    --shadow-primary: 0 4px 20px rgba(46, 139, 87, 0.25);
+    --shadow-primary-hover: 0 8px 30px rgba(46, 139, 87, 0.35);
+    --shadow-inner: inset 0 2px 4px rgba(0,0,0,0.06);
+    
+    /* Transitions - Smooth */
+    --transition-fast: 0.15s ease-out;
+    --transition-normal: 0.25s ease-out;
+    --transition-slow: 0.4s ease-out;
+    --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Container */
+    --container-max-width: 1200px;
+    --container-padding: 20px;
+    
+    /* Z-index Scale */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+}
+
+/* ========================================
+   3. TYPOGRAPHY SYSTEM - ENHANCED
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-color);
+    letter-spacing: -0.025em;
+}
+
+h1 {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-extrabold);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.15;
+}
+
+h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-md);
+}
+
+h5 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--spacing-sm);
+}
+
+h6 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--spacing-sm);
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+}
+
+a {
+    color: var(--primary-green);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+a:hover {
+    color: var(--secondary-green);
+}
+
+/* ========================================
+   4. LAYOUT COMPONENTS - ENHANCED
+   ======================================== */
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Enhanced Grid Layouts */
+.benefit-grid,
+.condition-grid,
+.testimonial-grid,
+.trust-grid,
+.video-grid,
+.faq-grid,
+.team-grid {
+    display: grid;
+    gap: var(--spacing-xl);
+}
+
+.benefit-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.condition-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.testimonial-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-bottom: var(--spacing-2xl);
+}
+
+.trust-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.faq-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+/* Section Spacing */
+section {
+    padding: var(--spacing-5xl) 0;
+}
+
+/* ========================================
+   5. HEADER & NAVIGATION - ENHANCED
+   ======================================== */
+
+header {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+    color: var(--white);
+    padding: var(--spacing-md) 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-fixed);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(10px);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+    transition: transform var(--transition-normal);
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Enhanced Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: var(--spacing-sm);
+    z-index: calc(var(--z-fixed) + 1);
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-normal);
+}
+
+.hamburger:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 3px 0;
+    transition: all var(--transition-normal);
+    border-radius: var(--radius-xs);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* Enhanced Navigation */
+nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-xl);
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-normal);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-sm);
+    position: relative;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--light-green);
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   6. BUTTONS - ENHANCED
+   ======================================== */
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius: var(--radius-lg);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    border: none;
+    font-size: var(--font-size-base);
+    margin: var(--spacing-sm);
+    font-family: var(--font-family);
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.025em;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left var(--transition-slow);
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+    color: var(--white);
+    box-shadow: var(--shadow-primary);
+    border: 2px solid transparent;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-primary-hover);
+    color: var(--white);
+}
+
+.secondary-btn {
+    background-color: var(--white);
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+    box-shadow: var(--shadow-sm);
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.cta-buttons {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ========================================
+   7. HERO SECTIONS - ENHANCED
+   ======================================== */
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 50%, var(--dark-green) 100%);
+    color: var(--white);
+    padding: 140px 0 var(--spacing-5xl);
+    text-align: center;
+    margin-top: 75px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+.hero-section h1 {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-extrabold);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.1;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--spacing-xl);
+    color: var(--light-green);
+    opacity: 0.95;
+}
+
+.hero-section p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-lg);
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* ========================================
+   8. CONTENT SECTIONS - ENHANCED
+   ======================================== */
+
+.benefits-section {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(135deg, var(--background-gray) 0%, var(--off-white) 100%);
+}
+
+.conditions-section {
+    padding: var(--spacing-5xl) 0;
+    background-color: var(--white);
+}
+
+.whatsapp-reviews-section {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(135deg, var(--background-gray) 0%, var(--light-gray) 100%);
+}
+
+.video-section {
+    padding: var(--spacing-5xl) 0;
+    background: var(--white);
+}
+
+.lead-magnet-section {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(135deg, var(--background-gray) 0%, var(--off-white) 100%);
+    text-align: center;
+}
+
+.consultation-section {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 50%, var(--dark-green) 100%);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+}
+
+.consultation-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    pointer-events: none;
+}
+
+.testimonials-section {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+    color: var(--white);
+}
+
+/* Enhanced Section Headings */
+.benefits-section h2,
+.conditions-section h2,
+.whatsapp-reviews-section h2,
+.video-section h2,
+.lead-magnet-section h2 {
+    text-align: center;
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-2xl);
+    color: var(--primary-green);
+    font-weight: var(--font-weight-bold);
+    position: relative;
+}
+
+.benefits-section h2::after,
+.conditions-section h2::after,
+.whatsapp-reviews-section h2::after,
+.video-section h2::after,
+.lead-magnet-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--accent-green));
+    border-radius: var(--radius-full);
+}
+
+.consultation-section h2,
+.testimonials-section h2 {
+    text-align: center;
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-lg);
+    color: var(--white);
+    font-weight: var(--font-weight-bold);
+}
+
+.consultation-section p {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xl);
+    color: var(--white);
+    opacity: 0.95;
+}
+
+.lead-magnet-section h3 {
+    font-size: var(--font-size-xl);
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xl);
+    font-weight: var(--font-weight-medium);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--text-light);
+    margin-bottom: var(--spacing-2xl);
+    font-weight: var(--font-weight-normal);
+}
+
+/* ========================================
+   9. CARDS & ITEMS - ENHANCED
+   ======================================== */
+
+.benefit-item {
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--light-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--accent-green));
+}
+
+.benefit-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-green);
+}
+
+.benefit-item h3 {
+    color: var(--primary-green);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.benefit-item p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.condition-item {
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    border-left: 6px solid var(--primary-green);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.condition-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+.condition-item h3 {
+    color: var(--primary-green);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.condition-item ul {
+    list-style: none;
+}
+
+.condition-item li {
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--light-gray);
+    color: var(--text-color);
+    position: relative;
+    padding-left: var(--spacing-lg);
+}
+
+.condition-item li:last-child {
+    border-bottom: none;
+}
+
+.condition-item li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+}
+
+.testimonial-item {
+    background: rgba(255,255,255,0.15);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all var(--transition-normal);
+}
+
+.testimonial-item:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-4px);
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+}
+
+.author {
+    font-weight: var(--font-weight-semibold);
+    color: var(--light-green);
+    font-size: var(--font-size-base);
+}
+
+.trust-indicators {
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.trust-indicators h3 {
+    margin-bottom: var(--spacing-xl);
+    font-size: var(--font-size-2xl);
+    color: var(--text-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--light-gray);
+}
+
+.trust-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-green);
+}
+
+.trust-item span {
+    color: var(--text-color);
+    font-weight: var(--font-weight-medium);
+}
+
+.trust-icon {
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+}
+
+/* ========================================
+   10. FORMS - ENHANCED
+   ======================================== */
+
+.contact-form,
+.modal form,
+.about-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.modal input,
+.modal select,
+.modal textarea,
+.about-modal-form input,
+.about-modal-form select,
+.about-modal-form textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid var(--light-gray);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    transition: all var(--transition-normal);
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--white);
+    font-weight: var(--font-weight-normal);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus,
+.modal input:focus,
+.modal select:focus,
+.modal textarea:focus,
+.about-modal-form input:focus,
+.about-modal-form select:focus,
+.about-modal-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 4px rgba(46, 139, 87, 0.1);
+    transform: translateY(-2px);
+}
+
+.contact-form textarea,
+.modal textarea,
+.about-modal-form textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.contact-form button,
+.modal button,
+.about-modal-form button {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+    color: var(--white);
+    padding: var(--spacing-lg);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    font-family: var(--font-family);
+    box-shadow: var(--shadow-primary);
+}
+
+.contact-form button:hover,
+.modal button:hover,
+.about-modal-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-primary-hover);
+}
+
+/* ========================================
+   11. MODALS - ENHANCED
+   ======================================== */
+
+.modal,
+.about-modal {
+    display: none;
+    position: fixed;
+    z-index: var(--z-modal);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    overflow-y: auto;
+    padding: var(--spacing-xl);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content,
+.about-modal-content {
+    background-color: var(--white);
+    margin: 0 auto;
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-2xl);
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-2xl);
+    animation: modalFadeIn var(--transition-slow) ease-out;
+    border: 1px solid var(--light-gray);
+}
+
+.modal-content h2,
+.about-modal h2 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-3xl);
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+}
+
+.modal-content p,
+.about-modal p {
+    margin-bottom: var(--spacing-xl);
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.close,
+.about-modal-close {
+    color: var(--text-lighter);
+    float: right;
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: all var(--transition-normal);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+}
+
+.close:hover,
+.close:focus,
+.about-modal-close:hover {
+    color: var(--primary-green);
+    background-color: var(--background-gray);
+}
+
+.privacy {
+    font-size: var(--font-size-sm);
+    color: var(--text-lighter);
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+.alternative {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    font-size: var(--font-size-sm);
+    color: var(--text-light);
+}
+
+.alternative a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+}
+
+.alternative a:hover {
+    text-decoration: underline;
+}
+
+.success-message {
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.success-message h3 {
+    color: var(--success-green);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-2xl);
+}
+
+.success-message p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-color);
+}
+
+/* ========================================
+   12. WHATSAPP COMPONENTS - ENHANCED
+   ======================================== */
+
+.whatsapp-chat-container {
+    max-width: 450px;
+    margin: 0 auto var(--spacing-2xl);
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    border: 1px solid var(--light-gray);
+}
+
+.whatsapp-header {
+    background: linear-gradient(135deg, var(--whatsapp-header) 0%, #064e45 100%);
+    color: var(--white);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whatsapp-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.profile-pic {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.profile-info h4 {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+.online-status {
+    font-size: var(--font-size-sm);
+    color: #b3d9d3;
+    opacity: 0.9;
+}
+
+.whatsapp-icons {
+    display: flex;
+    gap: var(--spacing-lg);
+    font-size: var(--font-size-xl);
+}
+
+.whatsapp-messages {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background: var(--whatsapp-bg);
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.message-group {
+    margin-bottom: var(--spacing-xl);
+}
+
+.message {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    animation: messageSlideIn var(--transition-normal) ease-out;
+}
+
+.message.received {
+    align-items: flex-start;
+}
+
+.message.sent {
+    align-items: flex-end;
+}
+
+.message-content {
+    max-width: 85%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    position: relative;
+    box-shadow: var(--shadow-xs);
+}
+
+.message.received .message-content {
+    background: var(--white);
+    border-bottom-left-radius: var(--radius-sm);
+}
+
+.message.sent .message-content {
+    background: var(--whatsapp-sent);
+    border-bottom-right-radius: var(--radius-sm);
+}
+
+.message-content p {
+    margin: 0;
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.message-time {
+    font-size: var(--font-size-xs);
+    color: var(--text-light);
+    margin-top: var(--spacing-xs);
+    padding: 0 var(--spacing-sm);
+}
+
+.whatsapp-input {
+    background: #f0f2f5;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-top: 1px solid var(--light-gray);
+}
+
+.input-area {
+    background: var(--white);
+    border-radius: var(--radius-3xl);
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    border: 1px solid var(--light-gray);
+    box-shadow: var(--shadow-xs);
+}
+
+.input-text {
+    flex: 1;
+    color: var(--text-lighter);
+    font-size: var(--font-size-base);
+}
+
+.emoji-btn, .mic-btn {
+    font-size: var(--font-size-xl);
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+}
+
+.emoji-btn:hover, .mic-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Enhanced WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, var(--whatsapp-green) 0%, var(--whatsapp-dark) 100%);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    text-align: center;
+    font-size: 32px;
+    box-shadow: var(--shadow-lg);
+    z-index: var(--z-fixed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-xl);
+    color: var(--white);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* ========================================
+   13. VIDEO COMPONENTS - ENHANCED
+   ======================================== */
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto var(--spacing-2xl);
+}
+
+.main-video-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: var(--spacing-2xl);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.main-video-wrapper iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.video-item {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    border: 1px solid var(--light-gray);
+}
+
+.video-item:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-green);
+}
+
+.video-info {
+    padding: var(--spacing-lg);
+}
+
+.video-info h4 {
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: var(--font-size-lg);
+    color: var(--primary-green);
+    font-weight: var(--font-weight-semibold);
+}
+
+.video-info p {
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: var(--font-size-base);
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.video-info span {
+    font-size: var(--font-size-sm);
+    color: var(--text-lighter);
+    background: var(--background-gray);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.video-cta {
+    text-align: center;
+    margin-top: var(--spacing-2xl);
+}
+
+.video-cta p {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-light);
+    font-weight: var(--font-weight-medium);
+}
+
+/* ========================================
+   14. FOOTER - ENHANCED
+   ======================================== */
+
+footer {
+    background: linear-gradient(135deg, var(--dark-footer) 0%, #0d1117 100%);
+    color: var(--white);
+    padding: var(--spacing-4xl) 0 var(--spacing-2xl);
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-green), transparent);
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-2xl);
+}
+
+.contact-info h3 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contact-info p {
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav li {
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-nav a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    opacity: 0.8;
+    font-weight: var(--font-weight-medium);
+}
+
+.footer-nav a:hover {
+    color: var(--primary-green);
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid #333;
+    margin-top: var(--spacing-2xl);
+    color: var(--white);
+    opacity: 0.7;
+}
+
+/* ========================================
+   15. PAGE-SPECIFIC STYLES - ENHANCED
+   ======================================== */
+
+/* About Page - Enhanced Founder Profile */
+.founder-profile {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: flex-start;
+    gap: var(--spacing-2xl);
+    margin: var(--spacing-2xl) 0;
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--light-gray);
+    transition: all var(--transition-normal);
+}
+
+.founder-profile:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+}
+
+.founder-image {
+    width: 250px;
+    height: 250px;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    border: 5px solid var(--primary-green);
+    box-shadow: var(--shadow-primary);
+    justify-self: center;
+    position: relative;
+}
+
+.founder-image::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(45deg, var(--primary-green), var(--accent-green), var(--secondary-green));
+    z-index: -1;
+}
+
+.founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.founder-avatar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+    color: var(--white);
+}
+
+.founder-info h3 {
+    color: var(--primary-green);
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-sm);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+}
+
+.founder-info h4 {
+    color: var(--text-light);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+    font-weight: var(--font-weight-medium);
+    opacity: 0.9;
+}
+
+.founder-info p {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+}
+
+.founder-credentials,
+.founder-vision {
+    margin: var(--spacing-xl) 0;
+}
+
+.founder-credentials h5,
+.founder-vision h5 {
+    color: var(--primary-green);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.founder-credentials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.founder-credentials li {
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-xl);
+    position: relative;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.founder-credentials li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+}
+
+.founder-vision p {
+    font-style: italic;
+    color: var(--text-color);
+    background: var(--background-gray);
+    padding: var(--spacing-lg);
+    border-left: 4px solid var(--primary-green);
+    border-radius: var(--radius-lg);
+    margin: 0;
+    line-height: 1.7;
+    font-size: var(--font-size-lg);
+}
+
+/* Enhanced Team Page Styles */
+.team-member-card {
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all var(--transition-normal);
+    border: 1px solid var(--light-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--accent-green));
+}
+
+.team-member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-green);
+}
+
+.member-image,
+.mini-member-image,
+.legal-member-image {
+    width: 140px;
+    height: 140px;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin: 0 auto var(--spacing-lg);
+    border: 4px solid var(--primary-green);
+    box-shadow: var(--shadow-primary);
+}
+
+.member-image img,
+.mini-member-image img,
+.legal-member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-avatar,
+.mini-member-avatar,
+.legal-member-avatar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+    color: var(--white);
+}
+
+.team-member-card h3,
+.team-member-mini h4,
+.legal-member-info h4 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+.team-member-card h4,
+.team-member-mini h5,
+.legal-member-info h5 {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+.team-member-card p,
+.team-member-mini p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.member-contact {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member-mini {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    border: 1px solid var(--light-gray);
+    transition: all var(--transition-normal);
+}
+
+.team-member-mini:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.mini-member-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto var(--spacing-md);
+}
+
+.mini-member-avatar {
+    font-size: 35px;
+}
+
+/* Enhanced Contact Page Styles */
+.clinic-location-map {
+    margin: var(--spacing-2xl) 0;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--light-gray);
+}
+
+.clinic-info {
+    margin-top: var(--spacing-2xl);
+}
+
+.location-details h4 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.location-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.location-details li {
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.location-details li:last-child {
+    border-bottom: none;
+}
+
+/* Enhanced Services Page Styles */
+.service-image {
+    width: 100%;
+    height: 220px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.service-image img:hover {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+    color: var(--white);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-primary);
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-lg);
+}
+
+.service-features li {
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-xl);
+    position: relative;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.service-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+}
+
+.process-steps {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-xl);
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--light-gray);
+    transition: all var(--transition-normal);
+}
+
+.step-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    border-color: var(--primary-green);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+    box-shadow: var(--shadow-primary);
+}
+
+.step-content h3 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.step-content p {
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.program-results {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Enhanced Utility Classes */
+.urgency {
+    margin-top: var(--spacing-lg);
+    font-style: italic;
+    color: var(--error-red);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+}
+
+.risk-reversal {
+    margin-top: var(--spacing-2xl);
+    background: rgba(255,255,255,0.15);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(15px);
+    font-size: var(--font-size-lg);
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.2);
+    line-height: 1.6;
+}
+
+/* ========================================
+   16. ANIMATIONS - ENHANCED
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.benefit-item,
+.condition-item,
+.testimonial-item {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.step-item {
+    animation: slideInFromLeft 0.6s ease-out;
+}
+
+/* ========================================
+   17. RESPONSIVE DESIGN - ENHANCED
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .founder-profile {
+        grid-template-columns: 200px 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .founder-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .founder-avatar {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Enhanced Mobile Navigation */
+    .hamburger {
+        display: flex;
+    }
+    
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-normal);
+        border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+    }
+    
+    nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: var(--spacing-lg) 0;
+    }
+    
+    nav li {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    nav li:last-child {
+        border-bottom: none;
+    }
+    
+    nav a {
+        display: block;
+        padding: var(--spacing-lg) var(--spacing-xl);
+        transition: all var(--transition-normal);
+        border-radius: 0;
+    }
+    
+    nav a:hover {
+        background-color: rgba(255,255,255,0.15);
+        color: var(--white);
+        transform: translateX(8px);
+    }
+    
+    /* Enhanced Mobile Hero */
+    .hero-section {
+        padding: 140px 0 var(--spacing-4xl);
+        margin-top: 85px;
+    }
+    
+    .hero-section h1 {
+        font-size: var(--font-size-4xl);
+        line-height: 1.1;
+    }
+    
+    .hero-section h2 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .hero-section p {
+        font-size: var(--font-size-base);
+    }
+    
+    /* Enhanced Mobile Grids */
+    .benefit-grid,
+    .condition-grid,
+    .testimonial-grid,
+    .trust-grid,
+    .video-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    footer .container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: var(--spacing-sm) 0;
+    }
+    
+    /* Enhanced Mobile WhatsApp */
+    .whatsapp-chat-container {
+        max-width: 100%;
+        margin: 0 0 var(--spacing-xl);
+        border-radius: var(--radius-xl);
+    }
+    
+    .whatsapp-messages {
+        max-height: 450px;
+        padding: var(--spacing-lg);
+    }
+    
+    .message-content {
+        max-width: 90%;
+        padding: var(--spacing-md);
+    }
+    
+    /* Enhanced Mobile Video */
+    .main-video-wrapper iframe {
+        height: 280px;
+    }
+    
+    .main-video-wrapper {
+        border-radius: var(--radius-xl);
+    }
+    
+    /* Enhanced Mobile Founder Profile */
+    .founder-profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-xl);
+        padding: var(--spacing-xl);
+        justify-items: center;
+    }
+    
+    .founder-image {
+        width: 180px;
+        height: 180px;
+        justify-self: center;
+    }
+    
+    .founder-avatar {
+        font-size: 70px;
+    }
+    
+    .founder-info {
+        text-align: center;
+    }
+    
+    .founder-info h3 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .founder-info h4 {
+        font-size: var(--font-size-lg);
+    }
+    
+    /* Enhanced Mobile Modals */
+    .modal,
+    .about-modal {
+        padding: var(--spacing-md);
+    }
+    
+    .modal-content,
+    .about-modal-content {
+        padding: var(--spacing-xl);
+        margin: var(--spacing-md) auto;
+        max-height: 85vh;
+        width: calc(100% - var(--spacing-lg));
+        border-radius: var(--radius-xl);
+    }
+    
+    .modal-content h2,
+    .about-modal h2 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .close,
+    .about-modal-close {
+        font-size: 28px;
+        right: var(--spacing-md);
+        top: var(--spacing-md);
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Enhanced Mobile Steps */
+    .step-item {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-lg);
+        padding: var(--spacing-xl);
+    }
+    
+    .step-number {
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Further Mobile Optimizations */
+    .founder-profile {
+        padding: var(--spacing-lg);
+        gap: var(--spacing-lg);
+    }
+    
+    .founder-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .founder-avatar {
+        font-size: 60px;
+    }
+    
+    .founder-info h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .founder-info h4 {
+        font-size: var(--font-size-base);
+    }
+    
+    .member-image,
+    .mini-member-image,
+    .legal-member-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .member-avatar,
+    .mini-member-avatar,
+    .legal-member-avatar {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    section {
+        padding: var(--spacing-4xl) 0;
+    }
+    
+    .hero-section h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .benefits-section h2,
+    .conditions-section h2,
+    .testimonials-section h2,
+    .lead-magnet-section h2,
+    .consultation-section h2,
+    .whatsapp-reviews-section h2,
+    .video-section h2 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .section-subtitle {
+        font-size: var(--font-size-lg);
+    }
+    
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: var(--spacing-lg);
+        right: var(--spacing-lg);
+        font-size: 28px;
+    }
+    
+    .main-video-wrapper iframe {
+        height: 220px;
+    }
+    
+    .founder-image {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .founder-avatar {
+        font-size: 50px;
+    }
+    
+    .modal-content,
+    .about-modal-content {
+        padding: var(--spacing-lg);
+        width: calc(100% - var(--spacing-md));
+    }
+    
+    .modal-content h2,
+    .about-modal h2 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .benefit-item,
+    .condition-item,
+    .team-member-card,
+    .team-member-mini {
+        padding: var(--spacing-lg);
+    }
+    
+    .step-item {
+        padding: var(--spacing-lg);
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* ========================================
+   18. FOCUS STATES FOR ACCESSIBILITY - ENHANCED
+   ======================================== */
+
+.btn:focus,
+nav a:focus,
+.whatsapp-float:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--light-green);
+    outline-offset: 2px;
+}
+
+/* ========================================
+   19. PRINT STYLES - ENHANCED
+   ======================================== */
+
+@media print {
+    .whatsapp-float,
+    .hamburger,
+    .modal,
+    .about-modal,
+    .whatsapp-chat-container {
+        display: none !important;
+    }
+    
+    header {
+        position: static;
+        background: var(--white) !important;
+        color: var(--text-color) !important;
+        box-shadow: none !important;
+    }
+    
+    .hero-section {
+        margin-top: 0;
+        background: var(--white) !important;
+        color: var(--text-color) !important;
+    }
+    
+    .consultation-section,
+    .testimonials-section {
+        background: var(--white) !important;
+        color: var(--text-color) !important;
+    }
+    
+    .btn {
+        border: 2px solid var(--primary-green) !important;
+        background: var(--white) !important;
+        color: var(--primary-green) !important;
+    }
+}
+
+/* ========================================
+   20. HIGH CONTRAST MODE SUPPORT
+   ======================================== */
+
+@media (prefers-contrast: high) {
+    :root {
+        --text-color: #000;
+        --text-light: #333;
+        --primary-green: #1a5f3f;
+        --background-gray: #f0f0f0;
+    }
+    
+    .btn {
+        border: 3px solid currentColor;
+    }
+}
+
+/* ========================================
+   21. REDUCED MOTION SUPPORT
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .whatsapp-float {
+        animation: none;
+    }
+}
